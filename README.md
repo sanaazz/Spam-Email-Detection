@@ -8,6 +8,7 @@ Using the word frequencies, data files are generated. we use the following files
 * y_train.csv
 * x_test.csv
 * y_test.csv
+  
 The files that start with x contain the features and the files starting with y contain the ground truth labels.
 In the data files generated, each row contains a feature vector specifying the occurrences of vocabulary words. The jth element of the feature vector given in row i indicates the number of occurrences of jth word of the vocabulary in the ith email. There are 3000 words in vocabulary, representing the most common 3000 words in all emails. For the labels, spam and not spam information is represented by a binary label (label 1 for spam mail, label 0 for a non-spam mail). In the dataset, there are no missing values both in feature vectors and data labels.
 In the csv files provided, the data is organized in a tabular form. This means that we can access the vocabulary from the index row of files containing the feature vectors (x_train.csv and x_test.csv). To scan the data files and perform vectorized operations, we use external libraries (such as Pandas and NumPy libraries for Python).
